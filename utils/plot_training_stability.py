@@ -4,9 +4,9 @@ import matplotlib.pyplot as plt
 
 # Define your available log paths
 log_paths = {
-    "PPO": "logs/ppo_improved/progress.csv",
-    "A2C": "logs/a2c/progress.csv",
-    "DQN": "logs/dqn_improved/progress.csv"
+    "PPO": "experiments/ppo_improved/progress.csv",
+    "A2C": "experiments/a2c/progress.csv",
+    "DQN": "experiments/dqn_improved/progress.csv"
 }
 
 # Output folder for saving plots

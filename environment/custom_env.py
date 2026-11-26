@@ -34,7 +34,9 @@ class GI2DEnv(gym.Env):
         self.episode = 1
         self.status = ""
 
-        self._load_assets()
+        if self.render_mode:
+            pygame.init()
+            self._load_assets()
 
     def _load_assets(self):
         self.asset_dir = os.path.join(os.path.dirname(__file__), "assets")
@@ -69,7 +71,8 @@ class GI2DEnv(gym.Env):
         self.prev_distance = self._distance(self.agent_pos, self.target_positions[0])
 
         if self.render_mode:
-            self._init_pygame()
+            if self.window is None:
+                self._init_pygame()
             self._render_frame()
 
         return self._get_obs(), {}

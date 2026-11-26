@@ -3,9 +3,9 @@ import pandas as pd
 
 # Define paths to progress.csv files
 log_paths = {
-    "PPO": "logs/ppo_improved/progress.csv",
-    "A2C": "logs/a2c/progress.csv",
-    "DQN": "logs/dqn_improved/progress.csv"
+    "PPO": "experiments/ppo_improved/progress.csv",
+    "A2C": "experiments/a2c/progress.csv",
+    "DQN": "experiments/dqn_improved/progress.csv"
 }
 
 print("\n--- Training Stability Summary ---\n")

@@ -6,7 +6,6 @@ import gymnasium as gym
 from stable_baselines3.common.policies import ActorCriticPolicy
 from stable_baselines3.common.utils import obs_as_tensor
 from stable_baselines3.common.vec_env import VecEnv
-from stable_baselines3.common.type_aliases import GymStepReturn
 from stable_baselines3.common.base_class import BaseAlgorithm
 
 

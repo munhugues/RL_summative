@@ -23,7 +23,7 @@ agent._setup_model()
 
 # ✅ Load model weights
 model_path = "models/reinforce/reinforce_gi2d_improved.pth"
-agent.policy.load_state_dict(torch.load(model_path, map_location=agent.device))
+agent.policy.load_state_dict(torch.load(model_path, map_location=agent.device, weights_only=True))
 
 # Evaluate and collect cumulative rewards
 episode_rewards = []
